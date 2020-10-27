@@ -34,7 +34,7 @@ class JaccardLoss(Loss):
         self.class_indexes = class_indexes
         self.per_image = per_image
         self.smooth = smooth
-        self.romil = romil
+        self.name = ujjwal
 
     def __call__(self, gt, pr):
         return 1 - F.iou_score(
